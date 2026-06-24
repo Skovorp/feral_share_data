@@ -1,0 +1,60 @@
+---
+file_io_params:
+  track_frame_length_thres: 200
+  track_distance_thres: 200
+  track_converter_badframes_thres: 20
+  box_buffer_size: 60
+
+worm_track_params:
+  save_debug_imgs: False
+  debug_img_folder: ""
+  extrema_coord_radius: 3
+  midline_coord_radius: 1
+  n_midline_pts: 15
+  interpolation_fps: 6
+
+worm_morph_params:
+  brightness_threshold: -25
+  #brightness_threshold: -35
+  #brightness_threshold_inner_worm_point: -35
+  closing_kernel_size: 1
+  #erosion_kernel_size: 2
+  area_to_perimeter: 2.85
+  area_to_perimeter_ratio_thres: 1.15
+  outer_loop_area_min: 100 #c2_092324 needed lower than 180#280 and below would be fine based on c3_101123_compressed-ret-1-AVA
+  inner_loop_area_min: 10 #30 and below 
+
+worm_midline_params:
+  n_midline_pts: 15
+  midline_length_thres: 55
+
+
+worm_chunk_params:
+  # extrema1_section_is_x: 1
+  # extrema1_section_is_y: 3
+  # extrema2_section_is_x: -2
+  # extrema2_section_is_y: -4
+
+worm_section_brightness_params:
+  worm_radii: 4 #15
+  extrema1_section_is_x: 1
+  extrema1_section_is_y: 3
+  extrema2_section_is_x: -2
+  extrema2_section_is_y: -4
+
+beh_class_params:
+  #fps: 8
+  fps: 6
+  dframes: 4
+  speed_thres: 3
+  high_speed_bending_thres: 160
+  low_speed_bending_thres: 130
+  scale_factor: 1
+  arrow_thickness: 1
+  pause_time_thres_s: 0.5
+  n_midline_pts: 100
+
+debug_image_params:
+  fontScale: 0.3
+  font: "hershey_simplex"
+  arrow_thickness: 1
