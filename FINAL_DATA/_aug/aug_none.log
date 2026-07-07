@@ -1,0 +1,786 @@
+04:06:27 feral.dataset INFO: train class counts: [633225  27632 291644  56651]
+04:06:27 feral.dataset INFO: val class counts: [311741  25220 121922  63549]
+04:06:27 feral.dataset INFO: test class counts: [311741  25220 121922  63549]
+04:06:27 feral.data INFO: No inference dataset
+04:06:27 feral.data INFO: Dataset is multilabel: False
+04:06:28 httpx INFO: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitl-fpc32-256-diving48/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+04:06:28 httpx INFO: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/vjepa2-vitl-fpc32-256-diving48/71ae2a8b1ff5a297aeeaae9b5e64c7a2e5e6a633/config.json "HTTP/1.1 200 OK"
+Loading weights: 100%|██████████| 587/587 [00:00<00:00, 31264.21it/s]
+[1mVJEPA2Model LOAD REPORT[0m from: facebook/vjepa2-vitl-fpc32-256-diving48
+Key                                                              | Status     |  |
+-----------------------------------------------------------------+------------+--+-
+pooler.self_attention_layers.{0, 1, 2}.self_attn.v_proj.bias     | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.q_proj.bias     | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.out_proj.weight | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.q_proj.weight   | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.layer_norm2.bias          | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc2.weight            | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.layer_norm1.bias          | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc1.bias              | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc1.weight            | UNEXPECTED |  |
+pooler.cross_attention_layer.mlp.fc2.bias                        | UNEXPECTED |  |
+pooler.cross_attention_layer.layer_norm1.bias                    | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc2.bias              | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.q_proj.bias              | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.k_proj.weight   | UNEXPECTED |  |
+pooler.cross_attention_layer.layer_norm2.weight                  | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.layer_norm1.weight        | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.out_proj.bias   | UNEXPECTED |  |
+pooler.cross_attention_layer.mlp.fc1.bias                        | UNEXPECTED |  |
+pooler.cross_attention_layer.layer_norm2.bias                    | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.k_proj.bias     | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.v_proj.weight            | UNEXPECTED |  |
+pooler.cross_attention_layer.layer_norm1.weight                  | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.layer_norm2.weight        | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.v_proj.weight   | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.k_proj.weight            | UNEXPECTED |  |
+pooler.cross_attention_layer.mlp.fc2.weight                      | UNEXPECTED |  |
+pooler.query_tokens                                              | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.v_proj.bias              | UNEXPECTED |  |
+pooler.cross_attention_layer.mlp.fc1.weight                      | UNEXPECTED |  |
+classifier.weight                                                | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.q_proj.weight            | UNEXPECTED |  |
+classifier.bias                                                  | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.k_proj.bias              | UNEXPECTED |  |
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+04:06:30 feral.modeling INFO: parameters: 308_161_541
+  0%|          | 0/3942 [00:00<?, ?it/s]W0511 04:06:40.417000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/0_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:40.434000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/0_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:43.612000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/1_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:43.626000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/1_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:45.881000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/2_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:45.893000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/2_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:48.011000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/3_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:48.024000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/3_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:49.896000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/4_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:49.909000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/4_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:51.778000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/5_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:51.790000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/5_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:53.943000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/6_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:53.956000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/6_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:55.854000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/7_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:55.868000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/7_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:57.733000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/8_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:57.745000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/8_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:59.608000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/9_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:06:59.621000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/9_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:01.759000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/10_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:01.777000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/10_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:04.913000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/11_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:04.937000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/11_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:07.486000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/12_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:07.548000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/12_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:09.759000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/13_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:09.818000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/13_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:12.038000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/14_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:12.096000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/14_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:14.704000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/15_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:14.762000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/15_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:16.945000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/16_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:17.004000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/16_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:19.117000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/17_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:19.174000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/17_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:21.299000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/18_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:21.357000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/18_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:24.128000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/19_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:24.186000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/19_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:26.431000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/20_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:26.489000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/20_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:28.562000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/21_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:28.637000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/21_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:30.701000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/22_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:30.758000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/22_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:33.572000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/23_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:33.631000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/23_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.612000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] d0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.612000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] d2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.618000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] d0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.619000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] d2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.619000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] d1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.744000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] d0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.745000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] d2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.757000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] d0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.757000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] d2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.757000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] d1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.823000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] r1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.823000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] r0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.832000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] r1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:36.832000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] r0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.087000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.087000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.101000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.101000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.101000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.224000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.224000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.224000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.410000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.410000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.424000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.424000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.424000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.515000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.516000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.523000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.523000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.523000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.601000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.602000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.611000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.612000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] q0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.678000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.678000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.683000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:37.683000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] z1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.028000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] x1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.028000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] r2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.028000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] x0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.192000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] r2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.193000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] x0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.199000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] x1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.200000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] r2 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.200000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] x0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.287000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] x1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.287000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] x0 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.292000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] x1 is not in var_ranges, defaulting to unknown range.
+W0511 04:07:38.293000 124023774090816 torch/fx/experimental/symbolic_shapes.py:4449] [24/0] x0 is not in var_ranges, defaulting to unknown range.
+100%|██████████| 3942/3942 [25:52<00:00,  2.54it/s]  
+04:32:24 feral.train INFO: {'train_ap_other': 0.9013839566186987, 'train_ap_attack': 0.5316474470445408, 'train_ap_investigation': 0.6969252086482566, 'train_ap_mount': 0.6312768661155642, 'train_map': 0.6199498406027871, 'train_loss': 2.116403038142106}
+  0%|          | 0/1021 [00:00<?, ?it/s]W0511 04:32:42.814000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/24_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:32:42.832000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/24_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:32:46.315000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/25_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:32:46.329000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/25_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:32:51.017000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/26_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:32:51.030000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/26_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:32:54.194000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/27_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:32:54.207000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/27_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:32:57.332000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/28_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:32:57.345000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/28_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:01.474000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/29_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:01.491000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/29_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:04.862000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/30_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:04.876000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/30_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:08.021000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/31_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:08.034000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/31_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:11.192000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/32_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:11.206000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/32_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:14.441000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/33_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:14.462000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/33_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:19.216000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/34_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:19.236000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/34_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:23.539000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/35_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:23.553000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/35_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:26.827000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/36_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:26.841000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/36_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:30.112000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/37_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:30.125000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/37_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:33.264000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/38_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:33.277000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/38_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:39.272000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/39_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:39.287000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/39_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:42.547000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/40_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:42.560000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/40_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:45.883000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/41_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:45.896000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/41_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:49.078000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/42_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:49.092000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/42_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:52.258000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/43_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:52.272000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/43_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:55.418000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/44_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:55.431000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/44_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:58.595000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/45_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:33:58.608000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/45_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:34:02.044000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/46_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:34:02.063000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/46_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:34:06.855000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/47_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:34:06.875000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/47_1] xindex is not in var_ranges, defaulting to unknown range.
+100%|██████████| 1021/1021 [12:29<00:00,  1.36it/s] 
+  0%|          | 0/1021 [00:00<?, ?it/s]W0511 04:45:05.162000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/48_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:05.176000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/48_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:08.556000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/49_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:08.570000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/49_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:11.695000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/50_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:11.709000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/50_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:15.730000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/51_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:15.758000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/51_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:21.624000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/52_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:21.644000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/52_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:25.180000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/53_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:25.193000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/53_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:28.306000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/54_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:28.319000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/54_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:31.442000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/55_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:31.455000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/55_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:34.552000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/56_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:34.566000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/56_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:37.659000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/57_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:37.672000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/57_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:42.885000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/58_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:42.898000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/58_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:46.012000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/59_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:46.025000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/59_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:49.237000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/60_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:49.251000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/60_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:52.693000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/61_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:52.709000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/61_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:57.217000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/62_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:45:57.235000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/62_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:01.861000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/63_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:01.881000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/63_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:06.015000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/64_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:06.028000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/64_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:09.192000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/65_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:09.205000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/65_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:12.389000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/66_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:12.402000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/66_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:15.581000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/67_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:15.596000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/67_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:18.741000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/68_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:18.754000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/68_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:21.868000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/69_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:21.881000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/69_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:25.049000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/70_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:25.062000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/70_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:28.166000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/71_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 04:46:28.179000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/71_1] xindex is not in var_ranges, defaulting to unknown range.
+100%|██████████| 1021/1021 [12:51<00:00,  1.32it/s] 
+04:58:03 feral.train INFO: {'val_ap_other': 0.9699892438467806, 'val_ap_attack': 0.6885579058273052, 'val_ap_investigation': 0.8157547283129382, 'val_ap_mount': 0.953468702350073, 'val_map': 0.8192604454967721, 'val_f1_attack': np.float64(0.6645647625326034), 'val_f1_investigation': np.float64(0.7295582246987896), 'val_f1_mount': np.float64(0.7816735049111028), 'val_precision': 0.6727062712750614, 'val_recall': 0.8479333283795354, 'val_f1': 0.7252654973808319, 'val_accuracy': 0.8388558870995433, 'val_frame_level_map': 0.8528406202301827, 'val_loss': 1.7699110192293002, 'val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d18ad75690>, 'ema_val_ap_other': 0.9726013335783995, 'ema_val_ap_attack': 0.7204369600336488, 'ema_val_ap_investigation': 0.8376206325294232, 'ema_val_ap_mount': 0.9507331243393826, 'ema_val_map': 0.8362635723008182, 'ema_val_f1_attack': np.float64(0.6639914245664184), 'ema_val_f1_investigation': np.float64(0.7784801681288989), 'ema_val_f1_mount': np.float64(0.8914071856287425), 'ema_val_precision': 0.7187899686484817, 'ema_val_recall': 0.8843059173235016, 'ema_val_f1': 0.7779595927746866, 'ema_val_accuracy': 0.8628613505171552, 'ema_val_frame_level_map': 0.8681828528726268, 'ema_val_loss': 1.7127035442524778, 'ema_val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d26b2aec10>}
+04:58:05 feral.train INFO: Epoch 0: Saved EMA model checkpoint with ema_val_frame_level_map=0.8682
+100%|██████████| 3942/3942 [22:40<00:00,  2.90it/s]
+05:20:47 feral.train INFO: {'train_ap_other': 0.9490560273206199, 'train_ap_attack': 0.7576894571240541, 'train_ap_investigation': 0.8398490313281304, 'train_ap_mount': 0.8518547423421268, 'train_map': 0.8164644102647705, 'train_loss': 1.6916875235454178}
+100%|██████████| 1021/1021 [12:45<00:00,  1.33it/s]
+100%|██████████| 1021/1021 [12:12<00:00,  1.39it/s]
+05:46:04 feral.train INFO: {'val_ap_other': 0.987705397869846, 'val_ap_attack': 0.8244565149038019, 'val_ap_investigation': 0.909792417243073, 'val_ap_mount': 0.9719296249252048, 'val_map': 0.9020595190240265, 'val_f1_attack': np.float64(0.7757176212058783), 'val_f1_investigation': np.float64(0.8519101887025541), 'val_f1_mount': np.float64(0.9401643395526998), 'val_precision': 0.806157507308078, 'val_recall': 0.9167820093601401, 'val_f1': 0.8559307164870441, 'val_accuracy': 0.9098078265746432, 'val_frame_level_map': 0.915988410089447, 'val_loss': 1.4322787501059748, 'val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d34b3f5850>, 'ema_val_ap_other': 0.988147040176253, 'ema_val_ap_attack': 0.8404128569939443, 'ema_val_ap_investigation': 0.9172991624655994, 'ema_val_ap_mount': 0.9732243194132484, 'ema_val_map': 0.9103121129575973, 'ema_val_f1_attack': np.float64(0.7474842471550832), 'ema_val_f1_investigation': np.float64(0.8445406098489402), 'ema_val_f1_mount': np.float64(0.9354784443866705), 'ema_val_precision': 0.7867544725513627, 'ema_val_recall': 0.9214095840015885, 'ema_val_f1': 0.8425011004635646, 'ema_val_accuracy': 0.9051913913020255, 'ema_val_frame_level_map': 0.9227259708608629, 'ema_val_loss': 1.4189777810984434, 'ema_val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70c5e9fd8bd0>}
+05:46:05 feral.train INFO: Epoch 1: Saved EMA model checkpoint with ema_val_frame_level_map=0.9227
+100%|██████████| 3942/3942 [22:40<00:00,  2.90it/s]
+06:08:49 feral.train INFO: {'train_ap_other': 0.9710159933411502, 'train_ap_attack': 0.8125519043588136, 'train_ap_investigation': 0.905688547459067, 'train_ap_mount': 0.9048960527785649, 'train_map': 0.8743788348654818, 'train_loss': 1.492846641031675}
+100%|██████████| 1021/1021 [07:32<00:00,  2.25it/s]
+100%|██████████| 1021/1021 [07:40<00:00,  2.22it/s]
+06:24:20 feral.train INFO: {'val_ap_other': 0.9866874026341317, 'val_ap_attack': 0.8618832886398837, 'val_ap_investigation': 0.9072968046280602, 'val_ap_mount': 0.9609125283432735, 'val_map': 0.9100308738704058, 'val_f1_attack': np.float64(0.747976119776201), 'val_f1_investigation': np.float64(0.8090980733172097), 'val_f1_mount': np.float64(0.8498083775969878), 'val_precision': 0.7567671594616998, 'val_recall': 0.8894531625784952, 'val_f1': 0.8022941902301328, 'val_accuracy': 0.8930513111057697, 'val_frame_level_map': 0.9215554686198862, 'val_loss': 1.4770307742849398, 'val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d168a0a910>, 'ema_val_ap_other': 0.9895162895638347, 'ema_val_ap_attack': 0.8801714494763191, 'ema_val_ap_investigation': 0.9249321863533376, 'ema_val_ap_mount': 0.9759895758712391, 'ema_val_map': 0.9270310705669654, 'ema_val_f1_attack': np.float64(0.7640647640647641), 'ema_val_f1_investigation': np.float64(0.8595439339334486), 'ema_val_f1_mount': np.float64(0.9461005628053683), 'ema_val_precision': 0.8058943915277087, 'ema_val_recall': 0.9296329370761608, 'ema_val_f1': 0.8565697536011937, 'ema_val_accuracy': 0.9163967387364702, 'ema_val_frame_level_map': 0.936529506918374, 'ema_val_loss': 1.386960939968081, 'ema_val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70c5cce4b010>}
+06:24:21 feral.train INFO: Epoch 2: Saved EMA model checkpoint with ema_val_frame_level_map=0.9365
+100%|██████████| 3942/3942 [22:41<00:00,  2.90it/s] 
+06:47:06 feral.train INFO: {'train_ap_other': 0.9805091438080324, 'train_ap_attack': 0.8806659807476526, 'train_ap_investigation': 0.935470064697937, 'train_ap_mount': 0.9414004138272349, 'train_map': 0.9191788197576082, 'train_loss': 1.393081376553646}
+100%|██████████| 1021/1021 [07:38<00:00,  2.23it/s]
+100%|██████████| 1021/1021 [07:36<00:00,  2.24it/s]
+07:02:38 feral.train INFO: {'val_ap_other': 0.9826632117085361, 'val_ap_attack': 0.8895542045378846, 'val_ap_investigation': 0.9070021072508975, 'val_ap_mount': 0.9769211193102639, 'val_map': 0.9244924770330153, 'val_f1_attack': np.float64(0.836704885708026), 'val_f1_investigation': np.float64(0.8669870341826095), 'val_f1_mount': np.float64(0.9445137445137445), 'val_precision': 0.8597111846352202, 'val_recall': 0.9094301180018046, 'val_f1': 0.8827352214681267, 'val_accuracy': 0.9261866337030297, 'val_frame_level_map': 0.9362781832129863, 'val_loss': 1.4048953346525397, 'val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70ca0fbf8f90>, 'ema_val_ap_other': 0.9888660482366395, 'ema_val_ap_attack': 0.8928476454469809, 'ema_val_ap_investigation': 0.9275098375460491, 'ema_val_ap_mount': 0.9788060394747586, 'ema_val_map': 0.9330545074892629, 'ema_val_f1_attack': np.float64(0.8188883080676076), 'ema_val_f1_investigation': np.float64(0.8741486143243112), 'ema_val_f1_mount': np.float64(0.9466991300032567), 'ema_val_precision': 0.8444197161295355, 'ema_val_recall': 0.9234789215371065, 'ema_val_f1': 0.8799120174650584, 'ema_val_accuracy': 0.92760971664244, 'ema_val_frame_level_map': 0.9410818454036952, 'ema_val_loss': 1.375419749767998, 'ema_val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d2b8f93d90>}
+07:02:39 feral.train INFO: Epoch 3: Saved EMA model checkpoint with ema_val_frame_level_map=0.9411
+100%|██████████| 3942/3942 [22:43<00:00,  2.89it/s] 
+07:25:25 feral.train INFO: {'train_ap_other': 0.9872957946303502, 'train_ap_attack': 0.913143319636763, 'train_ap_investigation': 0.9577300890277666, 'train_ap_mount': 0.9672036696581671, 'train_map': 0.9460256927742322, 'train_loss': 1.323499897459843}
+100%|██████████| 1021/1021 [07:36<00:00,  2.24it/s]
+100%|██████████| 1021/1021 [07:34<00:00,  2.25it/s]
+07:40:55 feral.train INFO: {'val_ap_other': 0.98018247531872, 'val_ap_attack': 0.8319392972181735, 'val_ap_investigation': 0.8699412850683513, 'val_ap_mount': 0.9757487155691985, 'val_map': 0.8925430992852411, 'val_f1_attack': np.float64(0.7840767126987879), 'val_f1_investigation': np.float64(0.8639245423749884), 'val_f1_mount': np.float64(0.9457422522438003), 'val_precision': 0.8166475465166289, 'val_recall': 0.9254092781602608, 'val_f1': 0.8645811691058588, 'val_accuracy': 0.9159923237456459, 'val_frame_level_map': 0.9073684232270627, 'val_loss': 1.4485570625091992, 'val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d225f30790>, 'ema_val_ap_other': 0.9876783388025266, 'ema_val_ap_attack': 0.8970598994254401, 'ema_val_ap_investigation': 0.9173323438784373, 'ema_val_ap_mount': 0.977869561565579, 'ema_val_map': 0.9307539349564854, 'ema_val_f1_attack': np.float64(0.8338621286414768), 'ema_val_f1_investigation': np.float64(0.8770893046922804), 'ema_val_f1_mount': np.float64(0.9476609830741365), 'ema_val_precision': 0.8578752853284706, 'ema_val_recall': 0.9191210781445781, 'ema_val_f1': 0.8862041388026313, 'ema_val_accuracy': 0.9307572861464974, 'ema_val_frame_level_map': 0.9391127819078645, 'ema_val_loss': 1.386821375015231, 'ema_val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d29ea66790>}
+07:40:55 feral.train INFO: Epoch 4: Didnt improve for 1 epochs
+100%|██████████| 3942/3942 [22:45<00:00,  2.89it/s]
+08:03:44 feral.train INFO: {'train_ap_other': 0.9916616623377987, 'train_ap_attack': 0.9516115112406673, 'train_ap_investigation': 0.9712123546060173, 'train_ap_mount': 0.976888399419074, 'train_map': 0.9665707550885863, 'train_loss': 1.2741819472241}
+100%|██████████| 1021/1021 [07:38<00:00,  2.23it/s]
+100%|██████████| 1021/1021 [07:48<00:00,  2.18it/s]
+08:19:27 feral.train INFO: {'val_ap_other': 0.985923280634728, 'val_ap_attack': 0.8712492837223685, 'val_ap_investigation': 0.9028749897635591, 'val_ap_mount': 0.9735571010426332, 'val_map': 0.9158937915095203, 'val_f1_attack': np.float64(0.8340241215787312), 'val_f1_investigation': np.float64(0.879729632788401), 'val_f1_mount': np.float64(0.945512210593086), 'val_precision': 0.868047117153588, 'val_recall': 0.9069757325933109, 'val_f1': 0.8864219883200727, 'val_accuracy': 0.9315394094778087, 'val_frame_level_map': 0.9256052147939039, 'val_loss': 1.447977467567134, 'val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d22efec590>, 'ema_val_ap_other': 0.9862099035128628, 'ema_val_ap_attack': 0.890815283436075, 'ema_val_ap_investigation': 0.9064310578981669, 'ema_val_ap_mount': 0.9723956975350799, 'ema_val_map': 0.9232140129564406, 'ema_val_f1_attack': np.float64(0.852489602363276), 'ema_val_f1_investigation': np.float64(0.8837209302325582), 'ema_val_f1_mount': np.float64(0.946639206141172), 'ema_val_precision': 0.8816144932833131, 'ema_val_recall': 0.9073900127041514, 'ema_val_f1': 0.8942832462456688, 'ema_val_accuracy': 0.9345038476652665, 'ema_val_frame_level_map': 0.932313839563958, 'ema_val_loss': 1.404561340806677, 'ema_val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d182397ad0>}
+08:19:27 feral.train INFO: Epoch 5: Didnt improve for 2 epochs
+100%|██████████| 3942/3942 [22:43<00:00,  2.89it/s] 
+08:42:13 feral.train INFO: {'train_ap_other': 0.99483056041879, 'train_ap_attack': 0.9739807753852734, 'train_ap_investigation': 0.9832678075196306, 'train_ap_mount': 0.988701957975216, 'train_map': 0.9819835136267067, 'train_loss': 1.2353027161286667}
+100%|██████████| 1021/1021 [07:51<00:00,  2.17it/s]
+100%|██████████| 1021/1021 [07:50<00:00,  2.17it/s]
+08:58:15 feral.train INFO: {'val_ap_other': 0.9864304000099912, 'val_ap_attack': 0.8428206518191642, 'val_ap_investigation': 0.8886441447467133, 'val_ap_mount': 0.9645593965720907, 'val_map': 0.8986747310459894, 'val_f1_attack': np.float64(0.8295492487479131), 'val_f1_investigation': np.float64(0.8750981932443048), 'val_f1_mount': np.float64(0.9447397739933153), 'val_precision': 0.890340772734359, 'val_recall': 0.878952946004536, 'val_f1': 0.8831290719951778, 'val_accuracy': 0.9308106994471723, 'val_frame_level_map': 0.9083889971505007, 'val_loss': 1.479205837373462, 'val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d20c182390>, 'ema_val_ap_other': 0.9857907319764456, 'ema_val_ap_attack': 0.8786311587022784, 'ema_val_ap_investigation': 0.8956855093384796, 'ema_val_ap_mount': 0.9682717555151391, 'ema_val_map': 0.914196141185299, 'ema_val_f1_attack': np.float64(0.852134866866236), 'ema_val_f1_investigation': np.float64(0.8825631881531708), 'ema_val_f1_mount': np.float64(0.9479864720987036), 'ema_val_precision': 0.8861596398043662, 'ema_val_recall': 0.9025533965987836, 'ema_val_f1': 0.8942281757060367, 'ema_val_accuracy': 0.9348357731766035, 'ema_val_frame_level_map': 0.9233397084176723, 'ema_val_loss': 1.422808998686077, 'ema_val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d17133c2d0>}
+08:58:15 feral.train INFO: Epoch 6: Didnt improve for 3 epochs
+100%|██████████| 3942/3942 [22:39<00:00,  2.90it/s]
+09:20:58 feral.train INFO: {'train_ap_other': 0.9968229665570936, 'train_ap_attack': 0.984737980205622, 'train_ap_investigation': 0.99029194790489, 'train_ap_mount': 0.9927716458600013, 'train_map': 0.9892671913235045, 'train_loss': 1.2075319352997287}
+100%|██████████| 1021/1021 [07:46<00:00,  2.19it/s]
+100%|██████████| 1021/1021 [07:36<00:00,  2.24it/s]
+09:36:40 feral.train INFO: {'val_ap_other': 0.9786219373500881, 'val_ap_attack': 0.8681590242319067, 'val_ap_investigation': 0.8659651557845969, 'val_ap_mount': 0.965127549205189, 'val_map': 0.8997505764072308, 'val_f1_attack': np.float64(0.8558565932716706), 'val_f1_investigation': np.float64(0.8829538421970567), 'val_f1_mount': np.float64(0.946349687026833), 'val_precision': 0.8988778654997667, 'val_recall': 0.8920355233132481, 'val_f1': 0.8950533741651867, 'val_accuracy': 0.935781951645702, 'val_frame_level_map': 0.9110334390313467, 'val_loss': 1.4366394855912845, 'val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70c5edb778d0>, 'ema_val_ap_other': 0.9809303377121803, 'ema_val_ap_attack': 0.8810977448303852, 'ema_val_ap_investigation': 0.8804180860217334, 'ema_val_ap_mount': 0.9665309021797333, 'ema_val_map': 0.9093489110106173, 'ema_val_f1_attack': np.float64(0.8589535390343407), 'ema_val_f1_investigation': np.float64(0.8832416693626658), 'ema_val_f1_mount': np.float64(0.946990733518455), 'ema_val_precision': 0.8919832509189854, 'ema_val_recall': 0.9008786231635265, 'ema_val_f1': 0.8963953139718205, 'ema_val_accuracy': 0.9359727134338266, 'ema_val_frame_level_map': 0.9197354089936921, 'ema_val_loss': 1.4330830658537939, 'ema_val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70c5e3339f50>}
+09:36:40 feral.train INFO: Epoch 7: Didnt improve for 4 epochs
+100%|██████████| 3942/3942 [22:47<00:00,  2.88it/s]  
+09:59:30 feral.train INFO: {'train_ap_other': 0.9980351835230432, 'train_ap_attack': 0.9940247551409453, 'train_ap_investigation': 0.9938224743824112, 'train_ap_mount': 0.9960005160382325, 'train_map': 0.9946159151871964, 'train_loss': 1.1898614416718478}
+100%|██████████| 1021/1021 [07:41<00:00,  2.21it/s]
+100%|██████████| 1021/1021 [07:34<00:00,  2.25it/s]
+10:15:05 feral.train INFO: {'val_ap_other': 0.9805176911102553, 'val_ap_attack': 0.8776160427515819, 'val_ap_investigation': 0.8851953953324599, 'val_ap_mount': 0.9596748712836513, 'val_map': 0.9074954364558977, 'val_f1_attack': np.float64(0.8587736335169844), 'val_f1_investigation': np.float64(0.880882920936501), 'val_f1_mount': np.float64(0.9474521547892003), 'val_precision': 0.8961114976264136, 'val_recall': 0.895351432704794, 'val_f1': 0.8957029030808953, 'val_accuracy': 0.9354309499555525, 'val_frame_level_map': 0.9188162151977348, 'val_loss': 1.4836272669083115, 'val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d15fd6ac10>, 'ema_val_ap_other': 0.9765238009101707, 'ema_val_ap_attack': 0.8723130213276797, 'ema_val_ap_investigation': 0.8672142481253217, 'ema_val_ap_mount': 0.960792616977556, 'ema_val_map': 0.9001066288101859, 'ema_val_f1_attack': np.float64(0.8572914166866651), 'ema_val_f1_investigation': np.float64(0.8825939062916609), 'ema_val_f1_mount': np.float64(0.9474589792119629), 'ema_val_precision': 0.8947396992201934, 'ema_val_recall': 0.8969494655795014, 'ema_val_f1': 0.8957814340634296, 'ema_val_accuracy': 0.9356751250443521, 'ema_val_frame_level_map': 0.9115505287922615, 'ema_val_loss': 1.4483832112597022, 'ema_val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70cb19291ed0>}
+10:15:05 feral.train INFO: Epoch 8: Didnt improve for 5 epochs
+100%|██████████| 3942/3942 [22:43<00:00,  2.89it/s] 
+10:37:51 feral.train INFO: {'train_ap_other': 0.9987221571576452, 'train_ap_attack': 0.9956288911779823, 'train_ap_investigation': 0.9959973759596842, 'train_ap_mount': 0.997698232570413, 'train_map': 0.996441499902693, 'train_loss': 1.1824865275274439}
+100%|██████████| 1021/1021 [07:36<00:00,  2.24it/s]
+100%|██████████| 1021/1021 [07:40<00:00,  2.22it/s]
+10:53:28 feral.train INFO: {'val_ap_other': 0.9721711347271125, 'val_ap_attack': 0.8562315878520792, 'val_ap_investigation': 0.8506983605878019, 'val_ap_mount': 0.9569225860187106, 'val_map': 0.8879508448195305, 'val_f1_attack': np.float64(0.8525033829499323), 'val_f1_investigation': np.float64(0.881892283202547), 'val_f1_mount': np.float64(0.9468524898214845), 'val_precision': 0.897811400908756, 'val_recall': 0.8906490808057748, 'val_f1': 0.8937493853246545, 'val_accuracy': 0.9350379806720156, 'val_frame_level_map': 0.9005460330167474, 'val_loss': 1.4768486259653244, 'val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70c5ec678750>, 'ema_val_ap_other': 0.973463584894741, 'ema_val_ap_attack': 0.8632262020811496, 'ema_val_ap_investigation': 0.8570776106384778, 'ema_val_ap_mount': 0.9577118577718643, 'ema_val_map': 0.8926718901638306, 'ema_val_f1_attack': np.float64(0.8553851135305783), 'ema_val_f1_investigation': np.float64(0.8816760344174119), 'ema_val_f1_mount': np.float64(0.9471887770279791), 'ema_val_precision': 0.8970120869229383, 'ema_val_recall': 0.8928594727449007, 'ema_val_f1': 0.8947499749919898, 'ema_val_accuracy': 0.9352668948177653, 'ema_val_frame_level_map': 0.9050843344393783, 'ema_val_loss': 1.4672431014480671, 'ema_val_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70d0c4dbc050>}
+10:53:28 feral.train INFO: Epoch 9: Didnt improve for 6 epochs
+10:53:28 feral.train INFO: Finished training
+10:53:28 feral.train INFO: Best checkpoint: checkpoints/aug_none_best_checkpoint.pt. best_map: 0.9411
+10:53:28 feral.train INFO: Loading model for test/inference
+/root/feral/feral/modeling.py:56: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  raw = torch.load(checkpoint_path, map_location="cpu")
+10:53:29 httpx INFO: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitl-fpc32-256-diving48/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+10:53:29 httpx INFO: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/vjepa2-vitl-fpc32-256-diving48/71ae2a8b1ff5a297aeeaae9b5e64c7a2e5e6a633/config.json "HTTP/1.1 200 OK"
+Loading weights: 100%|██████████| 587/587 [00:00<00:00, 7762.06it/s]
+[1mVJEPA2Model LOAD REPORT[0m from: facebook/vjepa2-vitl-fpc32-256-diving48
+Key                                                              | Status     |  |
+-----------------------------------------------------------------+------------+--+-
+pooler.self_attention_layers.{0, 1, 2}.self_attn.v_proj.bias     | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.q_proj.bias     | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.out_proj.weight | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.q_proj.weight   | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.layer_norm2.bias          | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc2.weight            | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.layer_norm1.bias          | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc1.bias              | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc1.weight            | UNEXPECTED |  |
+pooler.cross_attention_layer.mlp.fc2.bias                        | UNEXPECTED |  |
+pooler.cross_attention_layer.layer_norm1.bias                    | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc2.bias              | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.q_proj.bias              | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.k_proj.weight   | UNEXPECTED |  |
+pooler.cross_attention_layer.layer_norm2.weight                  | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.layer_norm1.weight        | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.out_proj.bias   | UNEXPECTED |  |
+pooler.cross_attention_layer.mlp.fc1.bias                        | UNEXPECTED |  |
+pooler.cross_attention_layer.layer_norm2.bias                    | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.k_proj.bias     | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.v_proj.weight            | UNEXPECTED |  |
+pooler.cross_attention_layer.layer_norm1.weight                  | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.layer_norm2.weight        | UNEXPECTED |  |
+pooler.self_attention_layers.{0, 1, 2}.self_attn.v_proj.weight   | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.k_proj.weight            | UNEXPECTED |  |
+pooler.cross_attention_layer.mlp.fc2.weight                      | UNEXPECTED |  |
+pooler.query_tokens                                              | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.v_proj.bias              | UNEXPECTED |  |
+pooler.cross_attention_layer.mlp.fc1.weight                      | UNEXPECTED |  |
+classifier.weight                                                | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.q_proj.weight            | UNEXPECTED |  |
+classifier.bias                                                  | UNEXPECTED |  |
+pooler.cross_attention_layer.cross_attn.k_proj.bias              | UNEXPECTED |  |
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+10:53:31 feral.train INFO: Running test...
+  0%|          | 0/1021 [00:00<?, ?it/s]W0511 10:54:16.034000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.214000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.219000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.237000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.290000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.592000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.657000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.657000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.663000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.683000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.920000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.984000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.985000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:16.990000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:17.010000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:17.368000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:17.718000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:18.050000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/72_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.228000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.292000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.293000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.298000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.319000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.588000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.650000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.650000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.656000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.675000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:46.941000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:47.026000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:47.026000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:47.033000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:47.062000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:54:47.785000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:48.307000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:54:48.802000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/73_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:16.458000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:16.525000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:16.526000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:16.537000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:16.557000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:16.831000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:16.895000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:16.895000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:16.900000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:16.920000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:17.158000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:17.223000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:17.223000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:17.229000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:17.258000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:17.717000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:18.072000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:18.407000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/74_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:46.507000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:46.581000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:46.581000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:46.587000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:46.605000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:46.876000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:46.938000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:46.939000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:46.945000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:46.963000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:47.193000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:47.256000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:47.256000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:47.262000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:47.281000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:55:47.626000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:47.970000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:55:48.308000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/75_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.053000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.116000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.117000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.123000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.141000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.411000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.473000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.473000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.479000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.498000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.722000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.785000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.785000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.791000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:11.810000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:12.156000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:12.499000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:12.849000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/76_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:45.412000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:45.477000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:45.477000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:45.483000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:45.502000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:45.777000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:45.839000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:45.840000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:45.845000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:45.864000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:46.092000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:46.156000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:46.156000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:46.161000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:46.180000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:56:46.543000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:46.906000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:56:47.234000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/77_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:14.597000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:14.661000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:14.662000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:14.668000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:14.687000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:14.959000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:15.021000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:15.022000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:15.027000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:15.046000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:15.268000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:15.331000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:15.331000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:15.336000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:15.356000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:15.700000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:16.072000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:16.401000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/78_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:44.934000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:44.999000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.000000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.006000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.024000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.297000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.360000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.360000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.365000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.385000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.609000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.674000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.674000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.679000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:45.699000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:57:46.054000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:46.414000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:57:46.744000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/79_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:09.821000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:09.886000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:09.886000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:09.892000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:09.911000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:10.292000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:10.393000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:10.393000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:10.402000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:10.432000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:10.783000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:10.884000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:10.884000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:10.892000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:10.923000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:11.517000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:12.082000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:12.623000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/80_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:39.947000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.010000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.011000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.017000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.035000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.305000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.370000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.370000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.376000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.405000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.639000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.703000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.703000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.709000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:40.728000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:58:41.072000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:41.421000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:58:41.751000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/81_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:07.845000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:07.948000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:07.948000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:07.957000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:07.988000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:08.419000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:08.519000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:08.520000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:08.528000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:08.558000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:08.915000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:09.034000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:09.034000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:09.043000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:09.074000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:09.640000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:10.162000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:10.654000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/82_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:38.490000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:38.553000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:38.554000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:38.559000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:38.578000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:38.844000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:38.906000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:38.906000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:38.911000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:38.930000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:39.156000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:39.220000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:39.221000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:39.226000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:39.246000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 10:59:39.590000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:39.942000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 10:59:40.267000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/83_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:07.636000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:07.701000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:07.701000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:07.707000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:07.726000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:08.098000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:08.185000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:08.185000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:08.193000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:08.220000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:08.489000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:08.566000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:08.567000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:08.573000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:08.602000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:09.023000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:09.486000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:09.907000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/84_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:36.695000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:36.759000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:36.759000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:36.765000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:36.784000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.053000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.114000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.115000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.120000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.139000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.361000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.425000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.425000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.430000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.465000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:00:37.944000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:38.439000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:00:38.865000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/85_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:06.653000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:06.717000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:06.718000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:06.724000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:06.743000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.053000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.119000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.120000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.125000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.145000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.463000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.532000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.533000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.538000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.558000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:07.906000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:08.254000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:08.592000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/86_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:34.807000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:34.904000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:34.904000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:34.912000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:34.941000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:35.358000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:35.455000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:35.455000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:35.464000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:35.493000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:35.836000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:35.935000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:35.935000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:35.943000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:35.984000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:01:36.499000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:36.979000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:01:37.453000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/87_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:05.449000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:05.511000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:05.512000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:05.517000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:05.536000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:05.800000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:05.863000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:05.863000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:05.868000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:05.887000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:06.146000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:06.233000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:06.233000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:06.240000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:06.267000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:06.686000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:07.081000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:07.466000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/88_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:34.654000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:34.717000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:34.718000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:34.724000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:34.742000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.010000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.073000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.073000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.078000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.097000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.318000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.382000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.382000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.387000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.407000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:02:35.750000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:36.118000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:02:36.448000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/89_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:00.474000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:00.538000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:00.538000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:00.544000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:00.563000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:00.847000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:00.912000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:00.912000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:00.917000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:00.937000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:01.168000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:01.231000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:01.232000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:01.237000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:01.256000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:01.603000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:01.947000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:02.299000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/90_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.128000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.195000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.196000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.202000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.230000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.500000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.562000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.563000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.568000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.587000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.814000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.877000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.878000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.883000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:30.903000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:31.246000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:31.603000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:31.955000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/91_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:56.651000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:56.753000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:56.754000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:56.762000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:56.792000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:57.233000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:57.331000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:57.332000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:57.340000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:57.371000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:57.733000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:57.838000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:57.839000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:57.848000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:57.881000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:03:58.456000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:59.023000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:03:59.528000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/92_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:24.711000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:24.774000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:24.775000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:24.782000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:24.802000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.068000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.131000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.131000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.136000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.155000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.377000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.440000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.440000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.446000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.465000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:25.820000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:26.182000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:26.512000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/93_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:57.730000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:57.794000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:57.794000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:57.800000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:57.820000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.086000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.149000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.149000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.154000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.173000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.394000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.457000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.457000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.462000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.481000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:04:58.822000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:59.178000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:04:59.504000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/94_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:05:22.860000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:05:22.952000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:05:22.952000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:05:22.959000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:05:22.979000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] ps0 is not in var_ranges, defaulting to unknown range.
+W0511 11:05:23.441000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:05:23.554000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:05:23.554000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:05:23.567000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:05:23.604000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] ps2 is not in var_ranges, defaulting to unknown range.
+W0511 11:05:24.012000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:05:24.137000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:05:24.138000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:05:24.151000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:05:24.187000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] ps4 is not in var_ranges, defaulting to unknown range.
+W0511 11:05:24.940000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:05:25.594000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] xindex is not in var_ranges, defaulting to unknown range.
+W0511 11:05:26.239000 124060224574080 torch/fx/experimental/symbolic_shapes.py:4449] [10/95_1] xindex is not in var_ranges, defaulting to unknown range.
+100%|██████████| 1021/1021 [25:36<00:00,  1.50s/it]  
+11:19:20 feral.train INFO: {'test_ap_other': 0.9888509228444861, 'test_ap_attack': 0.8928434757244363, 'test_ap_investigation': 0.9275971930657608, 'test_ap_mount': 0.9788283596926886, 'test_map': 0.9330896761609618, 'test_f1_attack': np.float64(0.8191292830004532), 'test_f1_investigation': np.float64(0.8741809710245749), 'test_f1_mount': np.float64(0.9467725425726604), 'test_precision': 0.8445900197826369, 'test_recall': 0.9235161936379797, 'test_f1': 0.8800275988658961, 'test_accuracy': 0.9276631299431148, 'test_frame_level_map': 0.9410959969248207, 'test_raster_plot': <wandb.sdk.data_types.image.Image object at 0x70c5ed788310>}
