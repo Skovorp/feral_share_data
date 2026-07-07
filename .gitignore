@@ -1,0 +1,10 @@
+# Reconstructed large files (rebuilt from *.part_* via ./reassemble.sh).
+# These exceed GitHub's 50MB limit and live in the repo only as split parts.
+example_videos/SUP_1_calms_2min.mp4
+FINAL_DATA/_backbone/videoprism/calms/raw_test.json
+FINAL_DATA/_backbone/vjepa2.1/calms/raw_test.json
+FINAL_DATA/_backbone/vjepa2/calms/raw_test.json
+FINAL_DATA/_preset/default/calms/raw_test.json
+FINAL_DATA/_preset/lite/calms/raw_test.json
+FINAL_DATA/_preset/max/calms/raw_test.json
+FINAL_DATA/raw_output_calms.json
